@@ -26,5 +26,5 @@ The system's net charge is defined by the `ICHARG` command, which has a default 
 The `MULT` keyword specifies the spin multiplicity of the electronic state. The default value is 1, which corresponds to a singlet state, meaning all electrons are paired (no unpaired electrons).
 For systems with at least one unpaired electron, the user must specify the multiplicity. 
 
-The `SCFTYP` keyword is used to specify the type of self-consistent field (SCF) wavefunction. Several options are available, but the two most common are RHF and UHF. RHF (Restricted Hartree-Fock) is typically used for closed-shell systems, where all electrons are paired, and UHF (Unrestricted Hartree-Fock) is used for open-shell systems that contain unpaired electrons.
+The `SCFTYP` keyword is used to specify the type of self-consistent field (SCF) wavefunction. Several options are available, but the two most common are RHF (Restricted Hartree-Fock) and UHF (Unrestricted Hartree-Fock). RHF is typically used for closed-shell systems, where all electrons are paired, and UHF is used for open-shell systems that contain unpaired electrons.
 
