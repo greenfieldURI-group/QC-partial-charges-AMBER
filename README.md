@@ -26,7 +26,9 @@ The system's net charge is defined by the `ICHARG` command, which has a default 
 The `MULT` keyword specifies the spin multiplicity of the electronic state. The default value is 1, which corresponds to a singlet state, meaning all electrons are paired (no unpaired electrons).
 For systems with at least one unpaired electron, the user must specify the multiplicity. 
 
-The `SCFTYP` keyword is used to specify the type of self-consistent field (SCF) wavefunction. Several options are available, but the two most common are RHF (Restricted Hartree-Fock) and UHF (Unrestricted Hartree-Fock). RHF is typically used for closed-shell systems, where all electrons are paired, and UHF is used for open-shell systems that contain unpaired electrons.
+The `SCFTYP` keyword is used to specify the type of self-consistent field (SCF) wavefunction. Several options are available, but the two most common are RHF (Restricted Hartree-Fock) and UHF (Unrestricted Hartree-Fock). RHF is typically used for closed-shell systems, where all electrons are paired, and UHF is used for open-shell systems that contain unpaired electrons. The maximum number of SCF iterations is specified by `MAXIT=50`. The calculation will terminate with an error if the SCF procedure does not converge within 50 iterations.
 
-The DFTTYP keyword performs density functional theory (DFT) calculations. The [AMBER](https://ambermd.org/tutorials/basic/tutorial19/index.php) force field recommends using 'B3LYP', a widely used hybrid functional that combines five components: Becke, Slater, and Hartree-Fock (HF) exchange (B3), along with LYP and VWN5 correlation functionals.
+The `DFTTYP` keyword performs density functional theory (DFT) calculations. The [AMBER](https://ambermd.org/tutorials/basic/tutorial19/index.php) force field recommends using `B3LYP`, a widely used hybrid functional that combines five components: Becke, Slater, and Hartree-Fock (HF) exchange (B3), along with LYP and VWN5 correlation functionals.
+
+`RUNTYP=OPTIMIZE` is used to perform energy minimization. If you plan to calculate partial charges without optimizing the geometry, use `RUNTYP=ENERGY` instead. The `$STATPT` group controls the settings for geometry optimization, which will be explained in more detail later.
 
