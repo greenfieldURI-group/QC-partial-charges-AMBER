@@ -37,7 +37,7 @@ The `COORD=UNIQUE` provides Cartesian coordinates in the `$DATA` block.
 
 The `MOLPLT=.TRUE.` enables molecular orbital output for visualization.
 
-The `$SYSTEM` group sets options related to memory usage and parallel computation:
+The `$SYSTEM` group sets options related to memory usage and parallel computation. Please review the docs-input.txt file of the [GAMESS-US](https://www.msg.chem.iastate.edu/GAMESS) package.
 <pre>$SYSTEM MWORDS=100 MEMDDI=500 PARALL=.TRUE. $END</pre>
-Please review the docs-input.txt file of the [GAMESS-US](https://www.msg.chem.iastate.edu/GAMESS) package.
+
 
