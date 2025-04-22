@@ -13,8 +13,12 @@ Here, we walk through a few options used for calculating partial charges. The di
 <pre> /examples/biobinder_molecule/02-GAMESS-input-file/bb14-b3lyp.inp  </pre>
 
 ### Basis sets
-On the basis of [AMBER](https://ambermd.org/tutorials/basic/tutorial19/index.php) suggestions, the 6-31G* basis set is chosen, which is mention in the below command
+On the basis of [AMBER](https://ambermd.org/tutorials/basic/tutorial19/index.php) suggestions, the 6-31G* basis set is chosen, which is mentioned in the command below
 <pre> $BASIS GBASIS=N31 NGAUSS=6 NDFUNC=1 $END  </pre>
 
 ### Quantum Calculation Method
+The `$control` group defines the overall quantum calculation method, job type, charge, multiplicity, and coordinate system.
 
+The system's net charge is defined by the `ICHARG` command, which has a default of zero. The default value will be implemented if `ICHARG` is not specified. 
+
+The 
