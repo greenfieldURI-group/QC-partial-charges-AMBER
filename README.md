@@ -17,8 +17,11 @@ On the basis of [AMBER](https://ambermd.org/tutorials/basic/tutorial19/index.php
 <pre> $BASIS GBASIS=N31 NGAUSS=6 NDFUNC=1 $END  </pre>
 
 ### Quantum Calculation Method
-The `$control` group defines the overall quantum calculation method, job type, charge, multiplicity, and coordinate system.
+The `$control` group defines the overall quantum calculation method, job type, charge, multiplicity, and coordinate system. For example:
+<pre>$CONTRL SCFTYP=RHF RUNTYP=OPTIMIZE DFTTYP=B3LYP MULT=1 COORD=UNIQUE
+        MOLPLT=.TRUE. MAXIT=50 $END </pre>
 
 The system's net charge is defined by the `ICHARG` command, which has a default of zero. The default value will be implemented if `ICHARG` is not specified. 
 
-The 
+The `MULT` keyword specifies the spin multiplicity of the electronic state. The default value is 1, which corresponds to a singlet state, meaning all electrons are paired (no unpaired electrons).
+For systems with at least one unpaired electron, the user must specify the multiplicity. 
