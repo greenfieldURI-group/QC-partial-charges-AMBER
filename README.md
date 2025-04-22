@@ -28,3 +28,5 @@ For systems with at least one unpaired electron, the user must specify the multi
 
 The `SCFTYP` keyword is used to specify the type of self-consistent field (SCF) wavefunction. Several options are available, but the two most common are RHF (Restricted Hartree-Fock) and UHF (Unrestricted Hartree-Fock). RHF is typically used for closed-shell systems, where all electrons are paired, and UHF is used for open-shell systems that contain unpaired electrons.
 
+The DFTTYP keyword performs density functional theory (DFT) calculations. The [AMBER](https://ambermd.org/tutorials/basic/tutorial19/index.php) force field recommends using 'B3LYP', a widely used hybrid functional that combines five components: Becke, Slater, and Hartree-Fock (HF) exchange (B3), along with LYP and VWN5 correlation functionals.
+
