@@ -12,11 +12,9 @@ To prepare a proper GAMESS input file, we recommend you review the input file fo
 Here, we walk through a few options used for calculating partial charges. The directory below provides the GAMESS input file used in this tutorial:
 <pre> /examples/biobinder_molecule/02-GAMESS-input-file/bb14-b3lyp.inp  </pre>
 
-### Basis sets
 On the basis of [AMBER](https://ambermd.org/tutorials/basic/tutorial19/index.php) suggestions, the 6-31G* basis set is chosen, which is mentioned in the command below
 <pre> $BASIS GBASIS=N31 NGAUSS=6 NDFUNC=1 $END  </pre>
 
-### Quantum Calculation Method
 The `$control` group defines the overall quantum calculation method, job type, charge, multiplicity, and coordinate system. For example:
 <pre>$CONTRL SCFTYP=RHF RUNTYP=OPTIMIZE DFTTYP=B3LYP MULT=1 COORD=UNIQUE
         MOLPLT=.TRUE. MAXIT=50 $END </pre>
