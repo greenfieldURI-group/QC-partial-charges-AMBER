@@ -29,7 +29,9 @@ The `SCFTYP` keyword is used to specify the type of self-consistent field (SCF) 
 
 The `DFTTYP` keyword performs density functional theory (DFT) calculations. The [AMBER](https://ambermd.org/tutorials/basic/tutorial19/index.php) force field recommends using `B3LYP`, a widely used hybrid functional that combines five components: Becke, Slater, and Hartree-Fock (HF) exchange (B3), along with LYP and VWN5 correlation functionals.
 
-`RUNTYP=OPTIMIZE` is used to perform energy minimization. If you plan to calculate partial charges without optimizing the geometry, use `RUNTYP=ENERGY` instead. The `$STATPT` group controls the settings for geometry optimization, which will be explained in more detail later.
+`RUNTYP=OPTIMIZE` is used to perform energy minimization. If you plan to calculate partial charges without optimizing the geometry, use `RUNTYP=ENERGY` instead. The `$STATPT` group controls the settings for geometry optimization:
+ <pre>$STATPT OPTTOL=0.0001 NSTEP=200 PROJCT=.FALSE. $END </pre>
+ where the `OPTTOL` keyword specifies the gradient convergence tolerance, the `NSTEP` keyword specifies the maximum number of steps, and `PROJCT` controls whether to project out translation and rotation from the optimization gradient.
 
 The `COORD=UNIQUE` provides Cartesian coordinates in the `$DATA` block.
 
