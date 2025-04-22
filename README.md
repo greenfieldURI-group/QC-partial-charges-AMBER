@@ -30,3 +30,9 @@ The `DFTTYP` keyword performs density functional theory (DFT) calculations. The 
 
 `RUNTYP=OPTIMIZE` is used to perform energy minimization. If you plan to calculate partial charges without optimizing the geometry, use `RUNTYP=ENERGY` instead. The `$STATPT` group controls the settings for geometry optimization, which will be explained in more detail later.
 
+The `COORD=UNIQUE` provides Cartesian coordinates in the `$DATA` block.
+
+The `MOLPLT=.TRUE.` enables molecular orbital output for visualization.
+
+
+
