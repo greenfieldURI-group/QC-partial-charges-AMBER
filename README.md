@@ -1,5 +1,5 @@
 # QC-partial-charges-AMBER
-A step-by-step procedure for calculating partial atomic charges compatible with the AMBER General Force Field (GAFF) uses quantum chemical calculations with GAMESS and RESP fitting via Antechamber.
+A step-by-step procedure for calculating partial atomic charges compatible with the AMBER General Force Field (GAFF) uses quantum chemical calculations with GAMESS and Restrained Electrostatic Potential (REsP) fitting via Antechamber.
 
 ## System Setup
 First, you need a PDB or XYZ file of your molecule. If the structure is unavailable, you can easily build it using molecular editing and visualization software such as Avogadro, VMD, PyMOL, etc. 
@@ -66,3 +66,14 @@ If the simulation is converged, a `.dat` format file containing all information 
 In the following section, we introduce our in-house C++ script that converts this data into the input files required by the RESP package.
 
 ## GAMESS output to RESP input
+To run RESP—an AMBER tool accessed via Antechamber—we have developed an in-house C++ script named `GAMESS_to_RESP`. This program converts the GAMESS `.dat` output file into the required REsP input files: `esp.dat` and `resp.in`.
+
+To install the `GAMESS_to_RESP`:
+<pre>cd GAMESS_to_RESP directory
+make</pre>
+
+To uninstall
+<pre>make clean</pre>
+
+To execute the program, run the GamessToResp executable from the command line:
+<pre> [path_to_code]/GAMESS_to_RESP/GamessToResp</pre>
