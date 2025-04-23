@@ -72,7 +72,7 @@ To install the `GAMESS_to_RESP`:
 <pre>cd GAMESS_to_RESP directory
 make</pre>
 
-To uninstall
+To uninstall:
 <pre>make clean</pre>
 
 To execute the program, run the GamessToResp executable from the command line:
