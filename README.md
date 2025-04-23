@@ -4,13 +4,13 @@ A step-by-step procedure for calculating partial atomic charges compatible with 
 ## System Setup
 First, you need a PDB or XYZ file of your molecule. If the structure is unavailable, you can easily build it using molecular editing and visualization software such as Avogadro, VMD, PyMOL, etc. 
 Below is an example of a biomolecule PDB file used in this tutorial.
-<pre> /examples/biobinder_molecule/01-structure/BB14.pdb </pre>
+<pre> QC-partial-charges-AMBER/examples/biobinder_molecule/01-structure/BB14.pdb </pre>
 
 ## Quantum Calculation Setup
 We used the open-source [GAMESS-US](https://www.msg.chem.iastate.edu/GAMESS) package for quantum calculations. 
 To prepare a proper GAMESS input file, we recommend you review the input file format and available options in [GAMESS-US](https://www.msg.chem.iastate.edu/GAMESS).  
 Here, we walk through a few options used for calculating partial charges. The directory below provides the GAMESS input file used in this tutorial:
-<pre> /examples/biobinder_molecule/02-GAMESS-input-file/bb14-b3lyp.inp  </pre>
+<pre> QC-partial-charges-AMBER/examples/biobinder_molecule/02-GAMESS-input-file/bb14-b3lyp.inp  </pre>
 
 On the basis of [AMBER](https://ambermd.org/tutorials/basic/tutorial19/index.php) suggestions, the 6-31G* basis set is chosen, which is mentioned in the command below
 <pre> $BASIS GBASIS=N31 NGAUSS=6 NDFUNC=1 $END  </pre>
@@ -76,4 +76,13 @@ To uninstall
 <pre>make clean</pre>
 
 To execute the program, run the GamessToResp executable from the command line:
-<pre> [path_to_code]/GAMESS_to_RESP/GamessToResp</pre>
+<pre>[path_to_code]/GAMESS_to_RESP/GamessToResp</pre>
+
+You need to create a `gamess-resp.in` file and specify the following parameters:
+ - `gamess-dat-file`: Path and filename of the GAMESS-generated `.dat` file.
+ - `qc_min`: Indicates whether quantum chemical minimization was performed before ESP calculation (YES or NO).
+ - `net_charge`: The net charge of the system.
+
+A sample `gamess-resp.in` file can be find in the below directory:
+<pre>QC-partial-charges-AMBER/GAMESS_to_RESP/gamess-resp.in</pre>
+
