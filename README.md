@@ -41,3 +41,9 @@ The `$SYSTEM` group sets options related to memory usage and parallel computatio
 <pre>$SYSTEM MWORDS=100 MEMDDI=500 PARALL=.TRUE. $END</pre>
 
 The `$ELPOT` and `$PDC` groups control the generation of electrostatic potential (ESP) data for computing partial atomic charges. 
+<pre>$ELPOT IEPOT=1 WHERE=PDC $END
+$PDC PTSEL=CONNOLLY $END </pre>
+`IEPOT=1` activates the calculation of the ESP on a grid, while `WHERE=PDC` specifies where to place the grid points for the ESP calculations. `PDC` stands for Potential Derived Charges, and the group determined the method of computing ESP-based atomic charges. Following the [AMBER](https://ambermd.org/tutorials/basic/tutorial19/index.php) recommendation, the `CONNOLLY` method is selected. In this approach, grid points are distributed over a set of fused van der Waals spheres using a surface generation algorithm developed by Michael Connolly.
+
+
+
