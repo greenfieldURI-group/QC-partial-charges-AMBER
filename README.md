@@ -59,6 +59,9 @@ C     6.0     0.4666300000  -0.8737300000  -0.6069900000
                   .
  $END        
 </pre>
-The `Title` line is a user-defined title line. The `C1` indicates no symmetry. And after that, at each line, the atom name, atomic number, and Cartesian coordinate (in \AA) are defined. 
+The `Title` line is a user-defined title line. The `C1` indicates no symmetry. After that, the atom name, atomic number, and Cartesian coordinate (in &Aring;) are defined at each line. 
+
+If the simulation is converged, a `.dat` format file containing all information about the EPS calculations will be generated.
+<pre>/examples/biobinder_molecule/02-GAMESS-input-file/bb14-b3lyp.dat</pre>
 
 
