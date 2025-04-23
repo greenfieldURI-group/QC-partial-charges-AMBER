@@ -63,5 +63,6 @@ The `Title` line is a user-defined title line. The `C1` indicates no symmetry. A
 
 If the simulation is converged, a `.dat` format file containing all information about the EPS calculations will be generated.
 <pre>/examples/biobinder_molecule/02-GAMESS-input-file/bb14-b3lyp.dat</pre>
+In the following section, we introduce our in-house C++ script that converts this data into the input files required by the RESP package.
 
-
+## GAMESS output to RESP input
