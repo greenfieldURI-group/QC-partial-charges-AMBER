@@ -83,8 +83,14 @@ You need to create a `gamess-resp.in` file and specify the following parameters:
  - `qc_min`: Indicates whether quantum chemical minimization was performed before ESP calculation (YES or NO).
  - `net_charge`: The net charge of the system.
 
-A sample `gamess-resp.in` file can be found in the below directory:
+A sample `gamess-resp.in` file can be found in the directory below:
 <pre>QC-partial-charges-AMBER/GAMESS_to_RESP/gamess-resp.in</pre>
 
 ## REsP fitting
+The REsP fitting tool is part of the [Antechamber](https://ambermd.org/antechamber/ac.html) package in AMBER. To run REsP, you need to install the Antechamber package.
 
+AMBER also provides an excellent [tutorial](https://ambermd.org/tutorials/advanced/tutorial1/section1.php) that explains in detail the parameters required in the `resp.in` file. 
+
+We provide two-step REsP fitting in the following directories for the biomolecule:
+<pre>QC-partial-charges-AMBER/examples/biobinder_molecule/03-RESP-inputfile-step01/</pre>
+<pre>QC-partial-charges-AMBER/examples/biobinder_molecule/03-RESP-inputfile-step02/</pre>
