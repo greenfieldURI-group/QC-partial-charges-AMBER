@@ -94,3 +94,21 @@ AMBER also provides an excellent [tutorial](https://ambermd.org/tutorials/advanc
 We provide two-step REsP fitting in the following directories for the biomolecule:
 <pre>QC-partial-charges-AMBER/examples/biobinder_molecule/03-RESP-inputfile-step01/</pre>
 <pre>QC-partial-charges-AMBER/examples/biobinder_molecule/03-RESP-inputfile-step02/</pre>
+
+## Citation
+If you use this code in your work, please cite:
+
+Faramarz Joodaki, Michael L. Greenfield. *GAMESS_to_RESP: A tool for converting GAMESS outputs for RESP charge fitting*. GitHub repository, 2025.
+
+BibTeX:
+```bibtex
+@misc{fjoodaki2025gamess_to_resp,
+  author       = {Faramarz Joodaki and Michael L. Greenfield},
+  title        = {GAMESS\_to\_RESP: A tool for converting GAMESS outputs for RESP charge fitting},
+  year         = 2025,
+  publisher    = {GitHub},
+  url          = {https://github.com/greenfieldURI-group/QC-partial-charges-AMBER.git},
+}
+
+
+
