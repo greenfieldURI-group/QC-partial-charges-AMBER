@@ -83,6 +83,6 @@ You need to create a `gamess-resp.in` file and specify the following parameters:
  - `qc_min`: Indicates whether quantum chemical minimization was performed before ESP calculation (YES or NO).
  - `net_charge`: The net charge of the system.
 
-A sample `gamess-resp.in` file can be find in the below directory:
+A sample `gamess-resp.in` file can be found in the below directory:
 <pre>QC-partial-charges-AMBER/GAMESS_to_RESP/gamess-resp.in</pre>
 
