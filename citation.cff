@@ -1,0 +1,15 @@
+cff-version: 1.0.0
+message: "If you use this software, please cite the following work:"
+authors:
+  - family-names: Joodaki
+    given-names: Faramarz
+    orcid: https://orcid.org/0000-0003-2592-8246  
+  - family-names: Greenfield
+    given-names: Michael L.
+    orcid: https://orcid.org/0000-0002-4704-1489  
+title: "GAMESS_to_RESP: A tool for converting GAMESS outputs for RESP charge fitting"
+version: "1.0.0"
+date-released: 2025-04-23
+#doi:
+url: https://github.com/greenfieldURI-group/QC-partial-charges-AMBER.git
+license: MIT 
