@@ -65,7 +65,7 @@ If the simulation is converged, a `.dat` format file containing all information 
 <pre>/examples/biobinder_molecule/02-GAMESS-input-file/bb14-b3lyp.dat</pre>
 In the following section, we introduce our in-house C++ script that converts this data into the input files required by the RESP package.
 
-## GAMESS output to RESP input
+## GAMESS output to REsP input
 To run RESP—an AMBER tool accessed via Antechamber—we have developed an in-house C++ script named `GAMESS_to_RESP`. This program converts the GAMESS `.dat` output file into the required REsP input files: `esp.dat` and `resp.in`.
 
 To install the `GAMESS_to_RESP`:
@@ -85,4 +85,6 @@ You need to create a `gamess-resp.in` file and specify the following parameters:
 
 A sample `gamess-resp.in` file can be found in the below directory:
 <pre>QC-partial-charges-AMBER/GAMESS_to_RESP/gamess-resp.in</pre>
+
+## REsP fitting
 
