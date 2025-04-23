@@ -1,1 +1,3 @@
 gamess-dat-file   bb14-b3lyp.dat
+qc_min            YES
+net_charge        0
