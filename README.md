@@ -45,5 +45,20 @@ The `$ELPOT` and `$PDC` groups control the generation of electrostatic potential
 $PDC PTSEL=CONNOLLY $END </pre>
 `IEPOT=1` activates the calculation of the ESP on a grid, while `WHERE=PDC` specifies where to place the grid points for the ESP calculations. `PDC` stands for Potential Derived Charges, and the group determined the method of computing ESP-based atomic charges. Following the [AMBER](https://ambermd.org/tutorials/basic/tutorial19/index.php) recommendation, the `CONNOLLY` method is selected. In this approach, grid points are distributed over a set of fused van der Waals spheres using a surface generation algorithm developed by Michael Connolly.
 
+At the end of the GAMESS input file, the `$DATA` group must be identified, which specifies the title, symmetry, and atomic coordinates.
+<pre> $DATA 
+Title
+C1
+O     8.0     1.0669000000   0.3186900000  -1.1464000000
+O     8.0    -7.0195700000   1.3754900000  -0.4785000000
+O     8.0     4.7814100000   1.0959300000  -0.1638200000
+O     8.0     6.2342900000   2.4721300000   0.5723600000
+C     6.0     0.4666300000  -0.8737300000  -0.6069900000
+                  .
+                  .
+                  .
+ $END        
+</pre>
+The `Title` line is a user-defined title line. The `C1` indicates no symmetry. And after that, at each line, the atom name, atomic number, and Cartesian coordinate (in \AA) are defined. 
 
 
