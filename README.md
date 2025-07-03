@@ -106,8 +106,10 @@ BibTeX:
   author       = {Faramarz Joodaki and Michael L. Greenfield},
   title        = {GAMESS\_to\_RESP: A tool for converting GAMESS outputs for RESP charge fitting},
   year         = 2025,
-  publisher    = {GitHub},
-  url          = {https://github.com/greenfieldURI-group/QC-partial-charges-AMBER.git},
+  publisher    = {Zenodo},
+  url          = {https://doi.org/10.5281/zenodo.15795500},
+  doi          = {10.5281/zenodo.15795500},
+  note         = {Archived GitHub repository at Zenodo}
 }
 
 
