@@ -1,5 +1,6 @@
-# QC-partial-charges-AMBER
+# QC-partial-charges-AMBER [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15795500.svg)](https://doi.org/10.5281/zenodo.15795500)
 A step-by-step procedure for calculating partial atomic charges compatible with the AMBER General Force Field (GAFF) uses quantum chemical calculations with GAMESS and Restrained Electrostatic Potential (REsP) fitting via Antechamber.
+
 
 ## System Setup
 First, you need a PDB or XYZ file of your molecule. If the structure is unavailable, you can easily build it using molecular editing and visualization software such as Avogadro, VMD, PyMOL, etc. 
