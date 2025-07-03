@@ -10,6 +10,6 @@ authors:
 title: "GAMESS_to_RESP: A tool for converting GAMESS outputs for RESP charge fitting"
 version: "1.0.0"
 date-released: 2025-04-23
-#doi:
+doi: 10.5281/zenodo.15795500
 url: https://github.com/greenfieldURI-group/QC-partial-charges-AMBER.git
 license: MIT 
